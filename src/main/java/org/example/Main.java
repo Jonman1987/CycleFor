@@ -1,12 +1,8 @@
 package org.example;
-
 public class Main {
 
     public static boolean multipleFour(int member) {
-        if (member % 4 == 0) {
-            return true;
-        }
-        return false;
+        return member % 4 == 0;
     }
 
     public static void main(String[] args) {
@@ -15,7 +11,7 @@ public class Main {
 
         int i;
         for (i = stop; i > start; i--) {
-            if (multipleFour(i) == true) {
+            if (multipleFour(i)) {
                 System.out.println(i + " ");
             }
         }
